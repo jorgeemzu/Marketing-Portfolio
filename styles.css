@@ -551,6 +551,48 @@ textarea {
 	border: 2px solid var(--green);
 }
 
+footer {
+	background-color: var(--black);
+	padding: 2em 0;
+}
+
+.footer__logo {
+	width: clamp(100px, 20vw, 150px);
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2em;
+}
+
+.footer__info--links {
+	margin: 2em 0;
+}
+
+.info__links--item a {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.info__links--item p {
+	margin: 0;
+}
+
+.info__links--item + .info__links--item {
+	margin-top: 1.5em;
+}
+
+.info__links--item img {
+	width: clamp(20px, 2vw, 50px);
+	margin-right: 1em;
+}
+
+.footer__menu--item a {
+	color: var(--green);
+}
+
 #phone {
 	animation: phone 2s infinite linear alternate;
 }
@@ -643,6 +685,10 @@ textarea {
 	.nav__menu--item a {
 		color: var(--gray);
 	}
+
+	.footer__menu--item + .footer__menu--item {
+		margin-top: 1.5em;
+	}
 }
 
 @media (min-width: 800px) {
@@ -702,5 +748,11 @@ textarea {
 
 	.service h3 {
 		font-size: clamp(1.5rem, 1.6vw, 3rem);
+	}
+
+	.footer__menu ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
