@@ -59,9 +59,9 @@ ul {
 	list-style: none;
 }
 
-header {
+/* header {
 	height: 100vh;
-}
+} */
 
 .anim__bg {
 	position: fixed;
@@ -339,7 +339,7 @@ nav {
 	align-items: center;
 	flex-wrap: wrap; */
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 	gap: 4em;
 	justify-items: center;
 	align-items: center;
@@ -369,11 +369,6 @@ nav {
 	margin-bottom: 2em;
 }
 
-.impulsar__text {
-	grid-column: 1/2;
-	grid-row: 1/2;
-}
-
 .impulsar__img {
 	grid-column: 2/3;
 	grid-row: 1/2;
@@ -384,7 +379,7 @@ nav {
 }
 
 .services__header {
-	margin-bottom: 1em;
+	margin-bottom: 4em;
 }
 
 /* .services h3 {
@@ -425,7 +420,7 @@ nav {
 
 .trabajos__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 2em;
 	justify-items: center;
 }
@@ -685,6 +680,11 @@ textarea {
 
 	.hero__img img {
 		width: clamp(200px, 40vw, 500px);
+	}
+
+	.impulsar__text {
+		grid-column: 1/2;
+		grid-row: 1/2;
 	}
 
 	.services__img {
