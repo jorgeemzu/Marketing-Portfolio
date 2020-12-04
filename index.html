@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="app.js" defer></script>
+    <script src="animation.js" defer></script>
     <title>Marketing Digital Creativo</title>
 </head>
 <body>
@@ -33,7 +34,7 @@
                         <ul>
                             <li class="nav__menu--item " ><a href="">Inicio</a></li>
                             <li class="nav__menu--item" ><a href="">Contacto</a></li>
-                            <li class="nav__menu--item" ><a href="">Recursos</a></li>
+                            <li class="nav__menu--item" ><a href="nosotros.html">Nosotros</a></li>
                             <li class="nav__menu--item portafolio" ><a href="">Portafolio</a></li>
                         </ul>
                         <div class="icon__x"></div>
@@ -67,8 +68,8 @@
             <div class="us">
                 <div class="container">
                     <div class="flex">
-                    <img src="images/undraw_team_spirit_hrr4.svg" alt="dashboard illustration">
-                    <div class="text">
+                    <img class="fade__left" src="images/undraw_team_spirit_hrr4.svg" alt="dashboard illustration">
+                    <div class="text fade__right">
                         <h3>¿Quienes Somos?</h3>
                         <p>Somos una agencia compuesta por un equipo de profesionales en comunicacion social
                             desarrollo web, diseño grafico y psicologia, ubicados en Maracaibo, Venezuela. <br> <br>
@@ -91,9 +92,9 @@
             <div class="container">
                 <div class="flex">
                     
-                        <img src="images/undraw_building_websites_i78t.svg" alt="">
+                        <img class="fade__right" src="images/undraw_building_websites_i78t.svg" alt="">
                     
-                    <div class="impulsar__text">
+                    <div class="impulsar__text fade__left">
                         <h3>Ven, que esperas, forma parte de nuestro equipo y <span>Juntos impulsaremos tu marca</span></h3>
                         <div class="btn">
                             <a  href="">Contacto</a>
@@ -105,10 +106,10 @@
         
         <div class="services gray__bg">
             <div class="container">
-                <h3 class="services__header" >¿Como podemos <span class="span__green" >Ayudarte?</span></h3>
+                <h3 class="services__header fade__left">¿Como podemos <span class="span__green" >Ayudarte?</span></h3>
                 
                 <div class="flex">
-                    <div class="services__img">
+                    <div class="services__img fade__right">
                         <svg  viewBox="0 0 1097 806" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="undraw_social_dashboard_k3pt 1" clip-path="url(#clip0)">
                             <path id="Vector" opacity="0.1" d="M641.82 111.4C577.1 109.15 515.46 88.26 456.6 65.4C397.74 42.54 339.44 17.21 276.23 5.10002C235.64 -2.68998 189.17 -3.78998 156.43 17.98C124.93 38.98 114.75 75.13 109.28 108.7C105.16 133.97 102.74 160.55 114.02 184.2C121.86 200.62 135.76 214.42 145.38 230.2C178.85 284.92 155.19 352.4 118.93 405.83C101.93 430.89 82.18 454.83 69.05 481.49C55.92 508.15 49.85 538.74 61.34 565.95C72.72 592.95 99.85 613.19 129.24 627.45C188.93 656.39 259.24 664.68 327.85 669.37C479.68 679.76 632.31 675.26 784.54 670.76C840.88 669.09 897.46 667.4 952.88 658.69C983.66 653.85 1015.43 646.17 1037.77 627.69C1066.14 604.16 1073.17 564.31 1054.16 534.81C1022.28 485.32 934.16 473.02 911.85 419.91C899.59 390.68 912.18 358.11 930.01 331C968.25 272.83 1032.34 221.81 1035.71 155.32C1038.03 109.66 1007.22 63.93 959.58 42.32C909.65 19.67 840.4 22.52 803.58 60.01C765.63 98.53 698.97 113.38 641.82 111.4Z" fill="#0AD2C1"/>
@@ -279,7 +280,7 @@
                             </svg>
                     </div>
 
-                    <div class="services__info">
+                    <div class="services__info fade__left">
                         <div class="service">
                             <img src="images/code.png" alt="">
                             <div class="service__text">
@@ -315,7 +316,7 @@
             </div>
         </div>
 
-        <div class="trabajos">
+        <div class="trabajos fade__left">
             <div class="container">
                 <h3>Conoce Nuestro <span class="span__green" >Trabajo</span> </h3>
                 <div class="trabajos__grid">
@@ -387,8 +388,8 @@
         <div class="web gray__bg">
             <div class="container">
                 <div class="flex">
-                    <img src="images/web yil.png" alt="Code Illustration">
-                    <div class="recursos__text">
+                    <img class="fade__left" src="images/web yil.png" alt="Code Illustration">
+                    <div class="recursos__text fade__right">
                         <h3>¿Necesitas una <span class="span__green">Pagina <br> Web </span>para tu negocio o emprendimiento?</h3>
                         <p>Nosotros podemos transformar tus sueños en realidad</p>
 
@@ -401,28 +402,69 @@
             </div>
         </div>
 
+        <div class="blog__container fade__right">
+            <div class="container">
+                <h3>Nuestro <span class="span__green" >Blog</span></h3>
+                <div class="blog__grid">
+                    <div class="blog__entry">
+                        <a href="">
+                            <div class="blog__img">
+                                <img src="images/two-confident-business-man-shaking-hands-during-meeting-in-the-office-success-dealing-greeting-and-partner-concept-min.jpg" alt="Confianza Agencia de Marketing Digital">
+                            </div>
+                            
+                                <h3 class="blog__titulo" >¿Porque confiar mi empresa o emprendimiento en una agencia de Marketing Digital?</h3>
+                    
+                        </a>
+                    </div>
+
+                    <div class="blog__entry">
+                        <a href="">
+                            <div class="blog__img">
+                                <img src="images/two-confident-business-man-shaking-hands-during-meeting-in-the-office-success-dealing-greeting-and-partner-concept-min.jpg" alt="Confianza Agencia de Marketing Digital">
+                            </div>
+                            
+                                <h3 class="blog__titulo" >¿Porque confiar mi empresa o emprendimiento en una agencia de Marketing Digital?</h3>
+                            
+                        </a>
+                    </div>
+
+                    <div class="blog__entry">
+                        <a href="">
+                            <div class="blog__img">
+                                <img src="images/two-confident-business-man-shaking-hands-during-meeting-in-the-office-success-dealing-greeting-and-partner-concept-min.jpg" alt="Confianza Agencia de Marketing Digital">
+                            </div>
+                            
+                                <h3 class="blog__titulo" >¿Porque confiar mi empresa o emprendimiento en una agencia de Marketing Digital?</h3>                   
+
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
         <div class="contacto">
             <div class="container">
-                <h3>Mantente en <span class="span__green">Contacto</span></h3>
+                <h3 class="fade__left" >Mantente en <span class="span__green">Contacto</span></h3>
                 <div class="flex">
-                    <div class="contacto__info">
+                    <div class="contacto__info fade__left">
                         <div class="contacto__info--item">
-                            <img src="images/instagram.png" alt="">
+                            <img src="images/instagram.png" alt="instagram_link">
                             <a href="">@MARKETINGDIGITALCREATIVO</a>
                         </div>
                         
                         <div class="contacto__info--item">
-                            <img src="images/whatsapp.png" alt="">
+                            <img src="images/whatsapp.png" alt="whatsapp_link">
                             <a href="">+58 412-5139919</a>
                         </div>
                         
                         <div class="contacto__info--item">
-                            <img src="images/sobre.png" alt="">
+                            <img src="images/sobre.png" alt="email_link">
                             <a href="">marketingdigital@gmail.com</a>
                         </div>
                     </div>
                     
-                    <form action="">
+                    <form class="fade__rigth" action="">
                         <div class="nombre">
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre">

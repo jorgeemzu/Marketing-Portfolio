@@ -79,7 +79,6 @@ ul {
 	/* width: 50vw; */
 	transform: translate(-50%, -50%);
 	text-transform: uppercase;
-	text-align: center;
 	overflow: hidden;
 
 	opacity: 0;
@@ -110,7 +109,7 @@ ul {
 	/* transform: translateY(100%); */
 	color: white;
 	display: inline-block;
-	font-size: clamp(2.5rem, 10vw, 4rem);
+	font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 .span__green {
@@ -341,7 +340,7 @@ nav {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 	gap: 4em;
-	justify-items: center;
+	/* justify-items: center; */
 	align-items: center;
 }
 
@@ -420,7 +419,7 @@ nav {
 
 .trabajos__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(240px, 330px));
 	gap: 2em;
 	justify-items: center;
 }
@@ -502,6 +501,7 @@ nav {
 
 .contacto__info {
 	padding: 3em 0;
+	justify-self: center;
 }
 
 .contacto__info--item a {
@@ -531,6 +531,7 @@ nav {
 
 form {
 	margin-left: 0;
+	justify-self: center;
 }
 label {
 	display: block;
@@ -550,6 +551,45 @@ textarea {
 	background-color: var(--gray);
 	border: 2px solid var(--green);
 }
+
+.blog__grid {
+	margin: 3em 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2em;
+}
+
+.blog__titulo {
+	color: var(--black);
+	font-size: clamp(1rem, 1.5vw, 1.5rem);
+	transition: 0.5s all;
+	margin-top: 1em;
+	position: relative;
+	z-index: 2;
+}
+
+.blog__img {
+	overflow: hidden;
+}
+
+.blog__img img {
+	transition: 1s all;
+}
+
+.blog__entry:hover .blog__img img {
+	transform: scale(1.1);
+}
+
+/* .blog__titulo::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 10px;
+	bottom: 0;
+	right: 0;
+	background-color: var(--green);
+	z-index: -1;
+} */
 
 footer {
 	background-color: var(--black);
@@ -591,6 +631,74 @@ footer {
 
 .footer__menu--item a {
 	color: var(--green);
+}
+
+/* Estilos Pagina nosotros */
+
+.nosotros h1,
+.mision h2,
+.vision h2,
+.objetivos h2 {
+	color: var(--green);
+}
+
+.nosotros p,
+.mision p,
+.vision p,
+.objetivos p,
+.objetivos__item {
+	font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.nosotros,
+.mision,
+.vision,
+.objetivos {
+	margin: 5em 0;
+}
+
+.us__img {
+	margin: 4em 0;
+}
+
+.objetivos ul {
+	margin: 2em 0;
+	padding-left: 2em;
+}
+
+.objetivos__item::before {
+	content: '\2022';
+	color: var(--green);
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.objetivos__item + .objetivos__item {
+	margin-top: 2em;
+}
+
+.fade__left {
+	opacity: 0;
+	transform: translateX(-90px);
+}
+
+.fade__right {
+	opacity: 0;
+	transform: translateX(90px);
+}
+
+.fade__left.appear,
+.fade__right.appear {
+	opacity: 1;
+	transform: translateX(0);
+	transition: 1s all;
+}
+
+.fadein {
+	opacity: 0;
+	transition: 1s all;
 }
 
 #phone {
@@ -735,6 +843,7 @@ footer {
 
 	.services__img {
 		grid-column: 2/3;
+		justify-self: center;
 	}
 
 	.services__info {
