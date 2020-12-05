@@ -22,7 +22,7 @@ body {
 .header {
 	position: relative;
 	overflow-x: hidden;
-	padding: 2em 0;
+	padding-top: 2em;
 }
 
 img {
@@ -50,13 +50,17 @@ h3 {
 p {
 	/* font-size: clamp(1rem, 1.5vw, 1.5rem); */
 	margin-top: 1em;
-
+	text-align: justify;
 	font-size: clamp(1rem, 1.2vw, 1.5rem);
 }
 
 ul {
 	padding: 0;
 	list-style: none;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /* header {
@@ -77,7 +81,7 @@ ul {
 	top: 50%;
 	left: 50%;
 	/* width: 50vw; */
-	transform: translate(-50%, -50%);
+	transform: translate(-40%, -50%);
 	text-transform: uppercase;
 	overflow: hidden;
 
@@ -119,6 +123,16 @@ ul {
 .gray__bg {
 	background-color: var(--grayBG);
 	padding: 4em 0;
+}
+
+.logo__anim {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: clamp(100px, 40vw, 600px);
+	transform: scale(0);
+	opacity: 0;
 }
 
 /* .nav__menu {
@@ -378,7 +392,7 @@ nav {
 }
 
 .services__header {
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 /* .services h3 {
@@ -552,6 +566,10 @@ textarea {
 	border: 2px solid var(--green);
 }
 
+.blog__container {
+	padding: 3em 0;
+}
+
 .blog__grid {
 	margin: 3em 0;
 	display: grid;
@@ -602,7 +620,7 @@ footer {
 
 .footer__grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2em;
 }
 
@@ -648,6 +666,7 @@ footer {
 .objetivos p,
 .objetivos__item {
 	font-size: clamp(1rem, 2vw, 2rem);
+	text-align: justify;
 }
 
 .nosotros,
@@ -699,6 +718,13 @@ footer {
 .fadein {
 	opacity: 0;
 	transition: 1s all;
+}
+
+.lema {
+	text-transform: uppercase;
+	padding: 2em 0;
+	margin-bottom: 2em;
+	text-align: center;
 }
 
 #phone {
