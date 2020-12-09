@@ -664,7 +664,8 @@ footer {
 .mision p,
 .vision p,
 .objetivos p,
-.objetivos__item {
+.objetivos__item,
+.blog__text {
 	font-size: clamp(1rem, 2vw, 2rem);
 	text-align: justify;
 }
@@ -680,12 +681,14 @@ footer {
 	margin: 4em 0;
 }
 
-.objetivos ul {
+.objetivos ul,
+.blog__list {
 	margin: 2em 0;
 	padding-left: 2em;
 }
 
-.objetivos__item::before {
+.objetivos__item::before,
+.blog__list--item::before {
 	content: '\2022';
 	color: var(--green);
 	font-weight: bold;
@@ -725,6 +728,31 @@ footer {
 	padding: 2em 0;
 	margin-bottom: 2em;
 	text-align: center;
+}
+
+/* Estilos Blog */
+
+.blog__text {
+	margin: 2em 0;
+}
+
+.blog__list--item + .blog__list--item {
+	margin-top: 1em;
+}
+
+.blog__title {
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	margin: 2em 0;
+}
+
+.blog__header {
+	margin: 1em 0;
+}
+
+.blog__img {
+	margin: 5em auto;
+	width: clamp(250px, 60vw, 700px);
+	display: block;
 }
 
 #phone {
