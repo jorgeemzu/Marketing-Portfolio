@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="app.js" defer></script>
     <script src="animation.js" defer></script>
+    <script src="slider.js" defer></script>
     <title>Marketing Digital Creativo</title>
 </head>
 <body>
@@ -72,17 +78,11 @@
                     <img class="fade__left" src="images/undraw_team_spirit_hrr4.svg" alt="dashboard illustration">
                     <div class="text fade__right">
                         <h3>¿Quienes Somos?</h3>
-                        <p>Somos una agencia compuesta por un equipo de profesionales en comunicacion social
-                            desarrollo web, diseño grafico y psicologia, ubicados en Maracaibo, Venezuela. <br> <br>
-                            Nuestro objetivo es brindarte soluciones en marketing digital para pocisionar tu empresa,Marca
-                            o emprendimiento en las redes sociales y asi obtener un maximo beneficio de tu presencia
-                            en internet <br> <br>
-
-                            Nuestro equipo tiene los conocimientos para enfrentar hoy en dia el mundo digital, creando estrategias
-                            que van desde la planeacion y ejecucion de un plan de marketing hasa el diseño y desarrollo de la pagina web.
-                            <br> <br>
-
-                            Trabajando con responsabilidad,creatividad, fidelidad, transparencia y valentia
+                        <p>Somos una agencia compuesta por un equipo de profesionales en Comunicación Social, Desarrollo Web, Diseño Gráfico, y Psicología, ubicados en Maracaibo, Venezuela. <br><br>
+                            Nuestro objetivo es brindarte soluciones en Marketing Digital, para posicionar tu marca, empresa o emprendimiento en internet, y así obtengas un máximo beneficio de tu presencia online.<br><br>
+                            Te brindamos una atención integral y personalizada, escuchando tus necesidades y objetivos que deseas alcanzar, todo esto antes de llevar a cabo cualquier tipo de nuestros servicios.<br><br>
+                            Poseemos las habilidades, competencias y recursos para gestionar la presencia de tu marca en el entorno digital, creando estrategias que van desde la planeación y desarrollo de un plan de Marketing Digital, hasta el diseño desarrollo de tu pagina web, trabajando con responsabilidad, creatividad, fidelidad, transparencia y valentía.<br><br>
+                             
                         </p>
                         </div>
                 </div>
@@ -286,8 +286,8 @@
                             <img src="images/code.png" alt="">
                             <div class="service__text">
                                 <h3>Desarrollo Web</h3>
-                                <p>Desarrollaremos tu sitio Web segun tus necesidades, asegurandonos de qué recibas visitas online 
-                                    con la seguridad de mantener tu sitio fresco y actualizado</p>
+                                <!-- <p>Desarrollaremos tu sitio Web segun tus necesidades, asegurandonos de qué recibas visitas online 
+                                    con la seguridad de mantener tu sitio fresco y actualizado</p> -->
                                 </div>
                         </div>
                         
@@ -295,7 +295,7 @@
                             <img src="images/funnel-dollar-solid.png" alt="">
                             <div class="service__text">
                                 <h3>Marketing Digital</h3>
-                                <p>Diseñaremos las mejores estrategias y campañas de Marketing qué Permitiran dar a conocer tu Marca</p>
+                                <!-- <p>Diseñaremos las mejores estrategias y campañas de Marketing qué Permitiran dar a conocer tu Marca</p> -->
                             </div>
                         </div>
                         
@@ -303,8 +303,8 @@
                             <img src="images/design.png" alt="">
                             <div class="service__text">
                                 <h3>Diseño Grafico</h3>
-                                <p>Desarrollaremos tu sitio Web segun tus necesidades, asegurandonos de qué recibas visitas online 
-                                    con la seguridad de mantener tu sitio fresco y actualizado</p>
+                                <!-- <p>Desarrollaremos tu sitio Web segun tus necesidades, asegurandonos de qué recibas visitas online 
+                                    con la seguridad de mantener tu sitio fresco y actualizado</p> -->
                                 </div>
                         </div>
                     </div>
@@ -320,8 +320,91 @@
         <div class="trabajos fade__left" id="portfolio">
             <div class="container">
                 <h3>Conoce Nuestro <span class="span__green" >Trabajo</span> </h3>
-                <div class="trabajos__grid">
-                    <div class="trabajo">
+                <!-- <div class="trabajos__grid"> -->
+                    <div class="carrousel">
+                        <div class="carrousel__contenedor">
+
+                            <button aria-label="prev" class="carrousel__prev" >
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+
+                            <div class="carrousel__lista">
+                                <div class="carrousel__elemento">
+                                    <div class="trabajo">
+                                        <img src="images/dubri.png" alt="">
+                                        <div class="trabajo__info">
+                                            <h4>Dubrasca Polo</h4>
+                                            <p>Agente de Seguros. Texas. USA</p>
+                                            <ul>
+                                                <li class="trbajo__info--item" >Manejo de Redes Sociales</li>
+                                                <li class="trbajo__info--item" >Creacion de estrategias de Marketing</li>
+                                                <li class="trbajo__info--item" >Branding</li>
+                                            </ul>
+                                            <a class="trabajo__btn" href="">Conocela</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carrousel__lemento">
+                                    <div class="trabajo">
+                                        <img src="images/protege tu inversion 3.png" alt="">
+                                        <div class="trabajo__info">
+                                            <h4>Debbie Larez</h4>
+                                            <p>Agente de Seguros. Texas. USA</p>
+                                            <ul>
+                                                <li class="trbajo__info--item" >Manejo de Redes Sociales</li>
+                                                <li class="trbajo__info--item" >Logo</li>
+                                                <li class="trbajo__info--item" >Identidad Corporativa</li>
+                                                <li class="trbajo__info--item" >Creacion de estrategias de Marketing</li>
+                                                <li class="trbajo__info--item" >Branding</li>
+                                            </ul>
+                                            <a class="trabajo__btn" href="">Conocela</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carrousel__lemento">
+                                    <div class="trabajo">
+                                        <img src="images/cliente satisfecho.png" alt="">
+                                        <div class="trabajo__info">
+                                            <h4>Yil Martins</h4>
+                                            <p>Car Dealer. Bayamon, Puerto Rico</p>
+                                            <ul>
+                                                <li class="trbajo__info--item" >Manejo de Redes Sociales</li>
+                                                <li class="trbajo__info--item" >Logo</li>
+                                                <li class="trbajo__info--item" >Identidad Corporativa</li>
+                                                <li class="trbajo__info--item" >Creacion de estrategias de Marketing</li>
+                                                <li class="trbajo__info--item" >Branding</li>
+                                            </ul>
+                                            <a class="trabajo__btn" href="">Conocela</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carrousel__lemento">
+                                    <div class="trabajo">
+                                        <img src="images/kaia post oro.png" alt="">
+                                        <div class="trabajo__info">
+                                            <h4>Kaia</h4>
+                                            <p>Velas y Jabones de Soja, Texas USA</p>
+                                            <ul>
+                                                <li class="trbajo__info--item" >Manejo de Redes Sociales</li>
+                                                <li class="trbajo__info--item" >Creacion de estrategias de Marketing</li>
+                                                <li class="trbajo__info--item" >Branding</li>
+                                            </ul>
+                                            <a class="trabajo__btn" href="">Conocela</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button aria-label="next" class="carrousel__next" >
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                        </div>
+
+                        <div role="tablist" class="carrousel__indicadores"></div>
+                    </div>
+                    <!-- <div class="trabajo">
                         <img src="images/dubri.png" alt="">
                         <div class="trabajo__info">
                             <h4>Dubrasca Polo</h4>
@@ -379,10 +462,10 @@
                             </ul>
                             <a class="trabajo__btn" href="">Conocela</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         
