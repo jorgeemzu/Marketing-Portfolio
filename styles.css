@@ -14,7 +14,7 @@
 
 body {
 	background-color: var(--gray);
-	font-family: 'Rubik';
+	font-family: 'Rubik', sans-serif;
 	font-size: 16px;
 	color: var(--black);
 }
@@ -550,8 +550,14 @@ nav {
 	opacity: 1;
 }
 
+.trabajo__web > .container{
+	display: grid;
+	gap: 2em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .web__img {
-	width: clamp(250px, 40vw, 700px);
+	width: clamp(300px, 40vw, 700px);
 	margin: 3em auto;
 	display: block;
 }
@@ -737,7 +743,8 @@ footer {
 }
 
 .us__img {
-	margin: 4em 0;
+	margin: 4em auto;
+	width: clamp(300px, 40vw, 600px);
 }
 
 .objetivos ul,
